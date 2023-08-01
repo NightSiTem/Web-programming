@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgb(119, 0, 255) 30%,rgb(75, 59, 221));
+}
+
+.wrapper{  
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.calc{
+    background-color: #002D34;
+    width: 500px;
+    height: 750px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+
+}
+
+.calc__container{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Строка ввода*/
+.field{
+    margin-top: 30px;
+    position: relative;
+    height: 70px;
+    width: 100%;
+}
+
+.field__container{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+.field__num{
+    padding-right: 10px;
+    text-align: right;
+    font-size: 50px;
+    color: black;
+    background-color: #bcebf494;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+
+}
+
+/* Операторы первая строчка */
+.operators{
+    margin: 30px 0px 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.operators button{
+    background-color: #bcebf494;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Числа */
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.content div{
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+
+}
+
+.content button{
+    font-size: 25px;
+    background-color: #bcebf494;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    width: 80px;
+    height: 80px;
+    font-weight: 700;
+}
+
+
+/* Нижняя строчка */
+.bottom__line{
+    justify-content: space-between;
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+}
+
+.bottom__line button{
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: #bcebf494;
+    color: black;
+    width: 80px;
+    height: 80px;
+    font-weight: 700;
+}
+
+[data-value = '.'] {
+    font-size:30px;
+    font-style: inherit;
+}
+
+
+/* Ноль */
+.noli{
+    display:flex;
+    width: 200px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.noli button{
+    color: black;
+    background-color: #bcebf494;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
